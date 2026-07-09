@@ -840,7 +840,6 @@ img {
   }
 }
 
-
 /*=============== CONTACT ===============*/
 
 .contact-container {
@@ -915,6 +914,60 @@ img {
 .contact-link:hover {
   transform: translateX(.35rem);
   color: var(--text-color);
+}
+
+/*=============== FOOTER ===============*/
+
+.footer {
+  position: relative;
+  padding-block: 4rem 2rem;
+  text-align: center;
+  row-gap: 1rem;
+  overflow: hidden;
+}
+
+.footer .blob-animate {
+  right: -3rem;
+  bottom: -3rem;
+}
+
+.footer-copy {
+  color: var(--title-color);
+}
+
+.footer-copy span {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.footer-link {
+  position: relative;
+  color: var(--first-color);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: var(--first-color);
+  transition: width .3s ease;
+}
+
+.footer-link:hover {
+  color: var(--text-color);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-year span {
+  font-family: var(--second-font);
 }
 
 /* Swiper class */
@@ -1328,7 +1381,7 @@ img {
     row-gap: .5rem;
   }
 
-  .contact-link{
+  .contact-link {
     font-size: 1.15rem;
   }
 }
