@@ -840,6 +840,83 @@ img {
   }
 }
 
+
+/*=============== CONTACT ===============*/
+
+.contact-container {
+  row-gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact .section-title {
+  margin-bottom: 1rem;
+}
+
+.contact-data {
+  text-align: center;
+}
+
+.contact-description {
+  font-family: var(--second-font);
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  display: none;
+}
+
+.contact-button {
+  cursor: pointer;
+}
+
+.contact-content {
+  row-gap: 3rem;
+}
+
+.contact-info {
+  row-gap: 1rem;
+}
+
+.contact-title {
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.contact-address {
+  color: var(--title-color);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  row-gap: .25rem;
+}
+
+.contact-link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: .5rem;
+  transition: transform .4s, color .4s;
+}
+
+.contact-link i {
+  font-size: 1.5rem;
+}
+
+.contact-link:hover {
+  transform: translateX(.35rem);
+  color: var(--text-color);
+}
+
 /* Swiper class */
 
 .projects-swiper {
@@ -1212,6 +1289,47 @@ img {
 
   .testimonials-number {
     font-size: var(--normal-font-size);
+  }
+
+  .testimonials-img {
+    width: 95px;
+  }
+
+  .contact {
+    padding-block: 9rem 4rem;
+  }
+
+  .contact-container {
+    row-gap: 8rem;
+  }
+
+  .contact-description {
+    font-size: var(--h2-font-size);
+  }
+
+  .contact-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-info {
+    row-gap: 1.5rem;
+    justify-self: flex-start;
+  }
+
+  .contact-write {
+    justify-self: flex-end;
+  }
+
+  .contact-title {
+    margin-bottom: .75rem;
+  }
+
+  .contact-links {
+    row-gap: .5rem;
+  }
+
+  .contact-link{
+    font-size: 1.15rem;
   }
 }
 
