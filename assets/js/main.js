@@ -140,6 +140,31 @@ textYear.textContent = currentYear
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+    // We get the position by scrolling down
+    const scrollY = window.scrollY;
+
+    sections.forEach(section => {
+        const id = section.id; // id of each section
+        const top = section.offsetTop - 100; // Distance from the top edge
+        const height = section.offsetHeight; // Element height
+        const link = document.querySelector(`.nav-menu a[href="#${id}"]`); // id nav link
+
+        if (!link) return;
+
+        const isActive =
+            scrollY >= top &&
+            scrollY < top + height;
+
+        link.classList.toggle('active-link', isActive);
+    });
+};
+
+window.addEventListener('scroll', scrollActive);
+
+scrollActive();
 
 /*=============== CUSTOM CURSOR ===============*/
 
