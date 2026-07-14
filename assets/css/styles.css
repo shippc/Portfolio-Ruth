@@ -169,7 +169,6 @@ img {
 }
 
 /*=============== CUSTOM CURSOR ===============*/
-
 .cursor {
   position: fixed;
   left: 0;
@@ -190,7 +189,6 @@ img {
 }
 
 /* Hide the custom cursor */
-
 .hide-cursor {
   width: 0;
   height: 0;
@@ -198,7 +196,6 @@ img {
 
 
 /*=============== HEADER & NAV ===============*/
-
 .header {
   position: fixed;
   width: 100%;
@@ -258,7 +255,6 @@ img {
 }
 
 /*=============== HOME ===============*/
-
 .home {
   position: relative;
 }
@@ -480,7 +476,6 @@ img {
 }
 
 /*=============== PROJECTS ===============*/
-
 .projects .section-title {
   text-align: initial;
   margin-left: 1.5rem;
@@ -577,7 +572,6 @@ img {
 }
 
 /*=============== WORK ===============*/
-
 .work-tabs {
   background-color: var(--container-color);
   padding: 1.25rem 2rem;
@@ -663,7 +657,6 @@ img {
 }
 
 /*=============== SERVICES ===============*/
-
 .services-container {
   row-gap: 2rem;
 }
@@ -746,7 +739,6 @@ img {
 }
 
 /* Hide services info */
-
 .services-close .services-info {
   height: 0;
   opacity: 0;
@@ -763,7 +755,6 @@ img {
 }
 
 /* Show and hide sections */
-
 .work-area [data-content] {
   display: none;
 }
@@ -773,13 +764,11 @@ img {
 }
 
 /* Active tab */
-
 .work-button .work-active {
   color: var(--first-color);
 }
 
 /*=============== TESTIMONIALS ===============*/
-
 .testimonials .section-title {
   text-align: initial;
   margin-left: 1.5rem;
@@ -877,7 +866,6 @@ img {
 }
 
 /*=============== CONTACT ===============*/
-
 .contact-container {
   row-gap: 4rem;
   padding-bottom: 2rem;
@@ -953,7 +941,6 @@ img {
 }
 
 /*=============== FOOTER ===============*/
-
 .footer {
   position: relative;
   padding-block: 4rem 2rem;
@@ -1007,7 +994,6 @@ img {
 }
 
 /* Swiper class */
-
 .projects-swiper {
   margin-inline: initial;
   padding-bottom: 2rem;
@@ -1023,7 +1009,6 @@ img {
 }
 
 /*=============== SCROLL BAR ===============*/
-
 ::-webkit-scrollbar {
   width: .6rem;
   background-color: hsl(240, 6%, 12%);
@@ -1040,7 +1025,6 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-
 /* For small devices */
 @media screen and (max-width: 320px) {
   .container {
@@ -1441,6 +1425,15 @@ img {
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.4;
+  }
+}
 
 /* Custom cursor is hidden for mobile devices */
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
