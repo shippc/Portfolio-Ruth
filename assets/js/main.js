@@ -202,3 +202,42 @@ a.forEach(item => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 300,
+    reset: true, // Repeat animations
+});
+
+/* Home */
+sr.reveal('.home-image');
+sr.reveal('.home-data', {
+    origin: 'bottom',
+    delay: 900,
+});
+sr.reveal('.home-info', {
+    origin: 'bottom',
+    delay: 1200,
+});
+sr.reveal('.home-social, .home-cv', {
+    delay: 1500,
+});
+
+/* About */
+sr.reveal('.about-data', {
+    origin: 'left',
+});
+sr.reveal('.about-image', {
+    origin: 'right',
+});
+
+/* Sections */
+sr.reveal(
+    '.projects-container, .work-container, .testimonials-container, .contact-container'
+);
+
+/* Services */
+sr.reveal('.services-card', {
+    interval: 100,
+});
