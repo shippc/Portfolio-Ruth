@@ -101,7 +101,7 @@ servicesButtons.forEach(button => {
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
 
-//Duplicate images to make the animation work
+// Duplicate images to make the animation work
 
 const tracks = document.querySelectorAll('.testimonials-content')
 
@@ -132,6 +132,7 @@ copyBtn.addEventListener('click', () => {
 })
 
 /*=============== CURRENT YEAR OF THE FOOTER ===============*/
+
 const textYear = document.getElementById('footer-year'),
     currentYear = new Date().getFullYear()
 
@@ -167,6 +168,7 @@ window.addEventListener('scroll', scrollActive);
 scrollActive();
 
 /*=============== CUSTOM CURSOR ===============*/
+
 const cursor = document.querySelector('.cursor')
 
 let mouseX = 0, mouseY = 0 // Store mouse position
@@ -202,6 +204,7 @@ a.forEach(item => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
